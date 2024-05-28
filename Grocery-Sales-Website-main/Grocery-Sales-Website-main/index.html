@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="grocery sales website">
+    <title>VBerg</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!-- font font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> VBerg </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count" style="display: none;">0</span></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <!-- shopping cart starts -->
+        <div class="shopping-cart">
+            <div class="box">
+                <ul id="cart">
+                    <!-- Add to products will be dynamically generate here -->
+                </ul>
+            </div>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button class="checkout-btn">checkout</button>
+        </div>
+        <!-- shopping cart ends-->
+
+        <!-- login form starts -->
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="box">
+        </form>
+        <!-- login form ends -->
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>fresh and <span>organic</span> products for your</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolorem suscipit, autem rerum minima tempora exercitationem facilis inventore ex non, debitis facere accusantium, officia delectus iusto quam voluptatibus at fugiat.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- features section starts -->
+
+    <section class="features" id="features">
+        <h1 class="heading"> our <span>features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/basket.jpg" alt="basket">
+                <h3>fresh and organic</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, impedit laudantium quo consequatur.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="image/delivery.jpg" alt="delivery">
+                <h3>free delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, impedit laudantium quo consequatur.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="image/payments.png" alt="payments">
+                <h3>easy payments</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, impedit laudantium quo consequatur.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+    <!-- features section ends -->
+
+    <!-- products section starts -->
+    <section class="products" id="products">
+        <h1 class="heading"> our <span>products</span></h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper" id="productContainer">
+                <!-- Product slides will be dynamically generate here -->
+            </div>
+        </div>
+
+    </section>
+    <!-- products section ends -->
+
+    <!-- categories section starts -->
+    <section class="categories" id="categories">
+        <h1 class="heading"> product <span>categories</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="https://img.freepik.com/fotos-gratis/cesta-completamente-dos-vegetais_1112-316.jpg" alt="">
+                <h3>vegetables</h3>
+                <p>upto 45% off</p>
+                <button class="btn">shop now</button>
+            </div>
+            <div class="box">
+                <img src="https://img.freepik.com/fotos-premium/fruta-fresca_181303-670.jpg" alt="">
+                <h3>fresh fruits</h3>
+                <p>upto 45% off</p>
+                <button class="btn">shop now</button>
+            </div>
+            <div class="box">
+                <img src="https://img.freepik.com/fotos-premium/diferentes-laticinios-isolados_392895-15111.jpg" alt="">
+                <h3>dairy products</h3>
+                <p>upto 45% off</p>
+                <button class="btn">shop now</button>
+            </div>
+            <div class="box">
+                <img src="https://img.freepik.com/fotos-premium/pedaco-de-carne-vermelha-enorme-e-bife-isolado-no-branco_95419-4098.jpg" alt="">
+                <h3>fresh meat</h3>
+                <p>upto 45% off</p>
+                <button class="btn">shop now</button>
+            </div>
+        </div>
+    </section>
+    <!-- categories section ends -->
+
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading"> customer's <span>review</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper" id="reviewContainer">
+                <!-- Reviews will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- blogs section starts -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading"> our <span>blogs</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="https://img.freepik.com/fotos-gratis/vista-superior-da-composicao-vegetal-com-frutas-frescas-na-mesa-azul_140725-136572.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by user </a>
+                        <a href="#"><i class="fas fa-calendar"></i> 10 octuber, 2023 </a>
+                    </div>
+                    <h3>fresh and organic vegetables and fruits</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit soluta.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/fotos-gratis/os-legumes-de-uma-cesta-na-mesa-de-madeira_155003-5607.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by user </a>
+                        <a href="#"><i class="fas fa-calendar"></i> 10 octuber, 2023 </a>
+                    </div>
+                    <h3>fresh and organic vegetables and fruits</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit soluta.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/fotos-premium/diferentes-frutas-e-vegetais-frescos-organicos-para-comer-saudavel-e-fazer-dieta_3236-487.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by user </a>
+                        <a href="#"><i class="fas fa-calendar"></i> 10 octuber, 2023 </a>
+                    </div>
+                    <h3>fresh and organic vegetables and fruits</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit soluta.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blogs section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>VBerg <i class="fas fa-shopping-basket"></i> </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quo?</p>
+                <div class="share">
+                    <a href="#" class="fa-brands fa-square-facebook fa-xl" aria-label="Facebook"></a>
+                    <a href="#" class="fa-brands fa-twitter fa-xl" aria-label="Twitter"></a>
+                    <a href="#" class="fa-brands fa-instagram fa-xl" aria-label="Instagram"></a>
+                    <a href="#" class="fa-brands fa-linkedin fa-xl" aria-label="Linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <address class="contact-info">
+                    <a href="tel:+123-456-7890" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                    <a href="tel:+123-456-7890" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                    <a href="mailto:vrozemberg@gmail.com" class="links"> <i class="fas fa-envelope"></i> vrozemberg@gmail.com </a>
+                    <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> D.Martins, ES-Brazil </a>
+                </address>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#categories" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+                <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+                <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" id="email" class="email" name="email" placeholder="your email" required>
+                    <input type="submit" value="subscribe" class="btn">
+                    <img src="https://help.zazzle.com/hc/article_attachments/360010513393/Logos-01.png" alt="Payment Methods" class="payment-img">
+                </form>
+            </div>
+        </div>
+
+        <div class="credit"> inspired <span> mr. web designer </span> | all rights reserved </div>
+    </section>
+    <!-- footer section ends -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+</body>
+</html>
